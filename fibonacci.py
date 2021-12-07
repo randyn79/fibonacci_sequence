@@ -1,14 +1,9 @@
-sequence = []
+sequence = [0]
 
 def fibonacci(maximum, first = 0, second = 1):
     if second <= maximum:
-        sequence.append(first)
         sequence.append(second)
-        temp = second
-        first = first + second
-        second = temp + first
-
-
+        first, second = second, first + second
         fibonacci(maximum, first, second)
     
     return sequence
