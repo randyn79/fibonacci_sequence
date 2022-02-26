@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 sequence = [0]
 
 def fibonacci(maximum, first = 0, second = 1):
@@ -5,7 +7,7 @@ def fibonacci(maximum, first = 0, second = 1):
         sequence.append(second)
         first, second = second, first + second
         fibonacci(maximum, first, second)
-    
+
     return sequence
 
 if __name__ == "__main__":
@@ -21,8 +23,3 @@ if __name__ == "__main__":
         print(sequence)
     else:
         print('Invalid input, maximum must be a positive integer.')
-    
-
-    
-    
-
